@@ -6,7 +6,7 @@ def app():
     # Load Data
     @st.cache_data
     def load_data():
-        df = pd.read_csv('C:/Users/ABO ELKHAER/Desktop/git-demo/git-htb/data analysis/covid 19/WHO-COVID-19-global-daily-data (1).csv')
+        df = pd.read_csv('covid19app/WHO-COVID-19-global-daily-data (1).csv')
         df['Date_reported'] = pd.to_datetime(df['Date_reported'])
         return df
 
