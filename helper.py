@@ -5,11 +5,9 @@ import streamlit as st
 # Load Data
 @st.cache_data
 def load_data():
-<<<<<<< HEAD
+
     df = pd.read_csv('WHO-COVID-19-global-daily-data (1).csv')
-=======
-    df = pd.read_csv('covid19app/WHO-COVID-19-global-daily-data (1).csv')
->>>>>>> 7b5b5966bdde9f1b9cd38e999d6bd1e236e8612b
+
     df['Date_reported'] = pd.to_datetime(df['Date_reported'])
     return df
 
